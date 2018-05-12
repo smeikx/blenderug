@@ -1,3 +1,104 @@
+:root {
+	--light-blue: #078DDB;
+	--orange: #FF6C02;
+	--dark-blue: #002765;
+	--pale-orange: #FBF1EA;
+	font-size: 26px;
+	padding: 0 0.6rem 0 1rem;
+}
+
 * {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, p, a, ul, ol, li, header, main,footer, body, section {
 	font-family: "Rubik", sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: var(--dark-blue);
+}
+
+main, footer, header {
+	max-width: 30rem;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header {
+	text-align: left;
+	margin-top: 2rem;
+}
+
+h1 {
+	color: var(--orange);
+	font-size: 5.5rem;
+	font-weight: bold;
+	line-height: 90%;
+}
+
+h1 span {
+	color: var(--dark-blue);
+	position: relative;
+	top: 0.04em;
+}
+
+#sub-line
+{
+	text-align: right;
+	font-weight: bold;
+}
+
+h2, h3, p {
+	font-size: 1rem;
+}
+
+h2 {
+	font-weight: bold;
+	color: var(--light-blue);
+	margin: 1rem 0 1rem;
+}
+
+h3 {
+	font-weight: bold;
+}
+
+p {
+	color: var(--dark-blue);
+}
+
+body {
+	background-color: var(--pale-orange);
+}
+
+#info {
+	text-align: right;
+}
+
+.meeting {
+	margin-bottom: 1rem;
+}
+
+.meeting h3, .meeting p {
+	display: inline;
+}
+
+.meeting h3:after {
+	content: ':';
+}
+
+.meeting p:before {
+	content: ' ';
+}
+
+.meeting a h3 {
+	text-decoration: underline;
+}
+
+.meeting a {
+	text-decoration: none;
+}
+
+section {
+	padding: 0rem 0 1rem;
 }
