@@ -1,0 +1,4 @@
+Verge3D: https://www.soft8soft.com/verge3d/
+Godot’s Better Collada Exporter: https://github.com/godotengine/collada-exporter
+DupliGroups: https://docs.blender.org/manual/en/dev/editors/3dview/object/properties/duplication/dupligroup.html
+Addon, B2U: https://blendermarket.com/products/b2u/
