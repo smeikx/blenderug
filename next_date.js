@@ -20,8 +20,8 @@ else
 		case 5: month = 'Juni'; break;
 		case 6: month = 'Juli'; break;
 		case 7: month = 'August'; break;
-		case 8: month = 'Oktober'; break;
-		case 9: month = 'September'; break;
+		case 8: month = 'September'; break;
+		case 9: month = 'Oktober'; break;
 		case 10: month = 'November'; break;
 		case 11: month = 'Dezember'; break;
 	}
@@ -38,7 +38,7 @@ function this_months_date(date)
 
 	let first_week_day = next_date.getDay();
 	let next_day = 1;
-	if (first_week_day == 1 || first_week_day == 2)
+	if (first_week_day <= 2)
 		next_day += 7 + tuesday - first_week_day;
 	else
 		next_day += 14 - (first_week_day - tuesday);
