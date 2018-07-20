@@ -3,6 +3,7 @@
 	--orange: #FF6C02;
 	--dark-blue: #002765;
 	--pale-orange: #FBF1EA;
+	--line-height: 1.4rem;
 	font-size: 26px;
 	padding: 0 0.6rem 0 1rem;
 }
@@ -11,12 +12,13 @@
 	box-sizing: border-box;
 }
 
-h1, h2, h3, p, a, ul, ol, li, header, main,footer, body, section {
+h1, h2, h3, p, a, ul, ol, li, header, main, footer, body, section, div {
 	font-family: "Rubik", sans-serif;
 	margin: 0;
 	padding: 0;
 	border: 0;
 	color: var(--dark-blue);
+	line-height: var(--line-height);
 }
 
 main, footer, header {
@@ -27,25 +29,23 @@ main, footer, header {
 
 header {
 	text-align: left;
-	margin-top: 2rem;
+	margin-top: 1.785rem;
 }
 
 h1 {
 	color: var(--orange);
-	font-size: 5.5rem;
+	font-size: 5rem;
 	font-weight: bold;
-	line-height: 90%;
+	line-height: calc(var(--line-height) * 3);
 }
 
 h1 span {
 	color: var(--dark-blue);
 	position: relative;
-	top: 0.04em;
+	top: 0.05rem;
 }
 
-#sub-line
-{
-	text-align: right;
+#sub-line {
 	font-weight: bold;
 }
 
@@ -56,7 +56,6 @@ h2, h3, p {
 h2 {
 	font-weight: bold;
 	color: var(--light-blue);
-	margin: 1rem 0 1rem;
 }
 
 h3 {
@@ -72,11 +71,13 @@ body {
 }
 
 #info {
+	position: relative;
+	top: -1.35rem;
 	text-align: right;
 }
 
 .meeting {
-	margin-bottom: 1rem;
+	margin-bottom: 0rem;
 }
 
 .meeting h3, .meeting p {
@@ -100,5 +101,10 @@ body {
 }
 
 section {
-	padding: 0rem 0 1rem;
+	padding-bottom: var(--line-height);
 }
+
+main {
+	margin-top: 0.1rem;
+}
+
