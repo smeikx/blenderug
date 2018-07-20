@@ -1,4 +1,5 @@
 :root {
+	--page-width: 30rem;
 	--light-blue: #078DDB;
 	--orange: #FF6C02;
 	--dark-blue: #002765;
@@ -6,6 +7,7 @@
 	--line-height: 1.4rem;
 	font-size: 26px;
 	padding: 0 0.6rem 0 1rem;
+	-webkit-text-size-adjust: none;
 }
 
 * {
@@ -19,10 +21,11 @@ h1, h2, h3, p, a, ul, ol, li, header, main, footer, body, section, div {
 	border: 0;
 	color: var(--dark-blue);
 	line-height: var(--line-height);
+	overflow-wrap: break-word;
 }
 
 main, footer, header {
-	max-width: 30rem;
+	max-width: var(--page-width);
 	width: 100%;
 	margin: 0 auto;
 }
@@ -74,6 +77,7 @@ body {
 	position: relative;
 	top: -1.37rem;
 	text-align: right;
+	margin-bottom: 1.55rem;
 }
 
 .meeting {
@@ -108,3 +112,45 @@ main {
 	margin-top: 0.1rem;
 }
 
+
+@media (max-width: 30rem) /* !!!: keep in sync with --page-width */
+{
+	:root {
+		font-size: 20px;
+	}
+
+	header {
+		margin-top: 1.58rem;
+	}
+
+	h1 {
+		font-size: 3.5rem;
+		line-height: calc(var(--line-height) * 2);
+	}
+
+	h1 span {
+		top: 0.04rem;
+	}
+
+	main, footer, header {
+		max-width: 100%;
+	}
+
+	#info {
+		top: 0.15rem;
+	}
+}
+
+@media (max-width: 370px)
+{
+	#info {
+		position: static;
+		margin-top: 1.55rem;
+		margin-bottom: var(--line-height);
+		text-align: left;
+	}
+
+	#info br {
+		display: none;
+	}
+}
