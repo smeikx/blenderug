@@ -72,12 +72,12 @@ body {
 
 #info {
 	position: relative;
-	top: -1.35rem;
+	top: -1.37rem;
 	text-align: right;
 }
 
 .meeting {
-	margin-bottom: 0rem;
+	margin-top: calc(var(--line-height) / 2);
 }
 
 .meeting h3, .meeting p {
